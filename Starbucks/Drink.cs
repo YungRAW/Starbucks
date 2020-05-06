@@ -30,18 +30,41 @@ namespace Starbucks
 
         public virtual string GetDetails() // pentru afisarea bauturii comandate
         {
-            return $"{name} and size: {size}.";
+            try
+            {
+                return $"{name}, {size} size.";
+            }
+            catch(MyCustomException e)
+            {               
+                throw new MyCustomException("Couldnt get details!");
+            }
 
         }
 
         public virtual bool HasStandardSize() // verifica daca are masura standard
         {
-            return hasStandardSize;
+            try
+            {
+                return hasStandardSize;
+            }
+            catch(MyCustomException exception)
+            {
+                throw new MyCustomException("Couldnt verify size!");
+            }
+            
         }
 
         public virtual void SetDrinkSize(DrinkSize drinkSize) // seteaza masura 
         {
-            this.size = drinkSize;
+            try
+            {
+                this.size = drinkSize;
+            }
+            catch(MyCustomException exception)
+            {
+                throw new MyCustomException("Couldnt set drink size!");
+            }
+            
         }
 
         public virtual bool HasCoffeine()
@@ -52,11 +75,20 @@ namespace Starbucks
         public virtual bool IsShort()
         {
             return size == DrinkSize.Short;
+
         }
 
         public void SetCoffeeType(CoffeeType value)
         {
-            coffeeType = value;
+            try
+            {
+                coffeeType = value;
+            }
+            catch(MyCustomException exception)
+            {
+                throw new MyCustomException("Couldnt set coffee type!");
+            }
+            
         }
 
 

@@ -7,7 +7,7 @@ namespace Starbucks
 {
     public class MenuValidator
     {
-        public MenuStates ValidateStateTransition(int userInput, MenuStates currentState, IDrink drink = null)
+        public MenuStates ValidateStateTransition(int userInput, MenuStates currentState, ILogger logger, IDrink drink = null)
         {
             switch (currentState)
             {
@@ -26,18 +26,27 @@ namespace Starbucks
                     {
                         if (drink.HasStandardSize() && !drink.HasCoffeine()) // logic for espresso shot and non coffeine drinks
                         {
+                            logger.Info("User ordered drink");
                             return MenuStates.Finished;
                         }
 
                         if (drink.HasStandardSize() && drink.HasCoffeine())
                         {
+                            logger.Info("User ordered drink");
                             return MenuStates.SelectCoffeeType;
                         }
 
                         if (!drink.HasStandardSize())
                         {
+                            logger.Info("User ordered drink"); ;
                             return MenuStates.SelectDrinkSize;
                         }
+                    }
+                    else
+                    {
+                        logger.Error("Couldnt order drink!");
+                        throw new MyCustomException("Couldnt order drink!");
+                        
                     }
                     return MenuStates.OrderingDrink;
 
@@ -47,22 +56,33 @@ namespace Starbucks
                     {
                         if (drink.HasCoffeine())
                         {
+                            logger.Info("User selected drink size");
                             return MenuStates.SelectCoffeeType;
                         }
                         else
                         {
+                            logger.Info("User selected drink size");
                             return MenuStates.Finished;
                         }
                     }
-                    return MenuStates.SelectDrinkSize;
+                    else
+                    {
+                        logger.Error("Couldnt select drink size!");
+                        throw new MyCustomException("Couldnt select drink size!");
+                    }
 
 
                 case MenuStates.SelectCoffeeType:
                     if (userInput >= 1 && userInput <= 2)
                     {
+                        logger.Info("User selected coffee type");
                         return MenuStates.Finished;
                     }
-                    return MenuStates.SelectDrinkSize;
+                    else
+                    {
+                        logger.Error("Couldnt select coffee type!");
+                        throw new MyCustomException("Couldnt select coffee type!");
+                    }
 
 
                 case MenuStates.Finished:

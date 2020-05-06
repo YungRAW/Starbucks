@@ -1,0 +1,11 @@
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.csprojAssemblyReference.cache
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.csproj.CoreCompileInputs.cache
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.AssemblyInfoInputs.cache
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.AssemblyInfo.cs
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\bin\Debug\netcoreapp2.1\Starbucks.deps.json
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\bin\Debug\netcoreapp2.1\Starbucks.runtimeconfig.json
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\bin\Debug\netcoreapp2.1\Starbucks.runtimeconfig.dev.json
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\bin\Debug\netcoreapp2.1\Starbucks.dll
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\bin\Debug\netcoreapp2.1\Starbucks.pdb
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.dll
+C:\Users\Razvan\source\repos\Starbucks\Starbucks\obj\Debug\netcoreapp2.1\Starbucks.pdb

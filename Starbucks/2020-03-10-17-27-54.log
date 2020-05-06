@@ -1,0 +1,9 @@
+﻿3/10/2020 5:27:56 PM [INFO]    User ordered drink
+3/10/2020 5:27:57 PM [INFO]    User selected coffee type
+3/10/2020 5:27:57 PM [INFO]    User ordered: White Chocolate Mocha, Short size.
+3/10/2020 5:28:01 PM [INFO]    User ordered drink
+3/10/2020 5:28:02 PM [INFO]    User selected drink size
+3/10/2020 5:28:03 PM [INFO]    User selected coffee type
+3/10/2020 5:28:03 PM [INFO]    User ordered: Cappuccino, Grande size.
+3/10/2020 5:28:05 PM [ERROR]   Couldnt order drink!
+3/10/2020 5:28:05 PM [FATAL]   Could not resolve menu!

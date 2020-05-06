@@ -15,8 +15,11 @@ namespace Starbucks
 
         public void FirstScreen()
         {
+
             gui.PrintMessageOnLine("1. Order a drink");
             gui.PrintMessageOnLine("2. Cancel");
+
+            
         }
 
         public void SecondScreen()
@@ -32,6 +35,7 @@ namespace Starbucks
             gui.PrintMessageOnLine($"8. {DrinkNames.PumpkinSpiceLatte}");
             gui.PrintMessageOnLine($"9. {DrinkNames.DoppioEspressoMacchiato}");
             gui.PrintMessageOnLine($"10. {DrinkNames.EspressoShot}");
+
         }
         public void ThirdScreen()
         {
@@ -40,20 +44,24 @@ namespace Starbucks
             gui.PrintMessageOnLine("2. Tall");
             gui.PrintMessageOnLine("3. Grande");
             gui.PrintMessageOnLine("4. Venti");
+
         }
         public void FourthScreen()
         {
             gui.PrintMessageOnLine("Do you want stronger coffee or a more flavored one?");
             gui.PrintMessageOnLine("1. Strong coffee");
             gui.PrintMessageOnLine("2. Flavored coffee");
+
         }
 
         public void FifthScreen()
         {
             gui.PrintMessageOnLine("Thank you for ordering! Here is your drink!");
             gui.PrintMessageOnLine("Please enjoy and come again!");
+
             gui.PrintMessageOnLine("1.Return to main menu");
             gui.PrintMessageOnLine("2.Exit");
+
         }
 
 

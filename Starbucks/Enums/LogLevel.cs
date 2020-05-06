@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Starbucks
 {
-    interface IDrink
+    public enum LogLevel
     {
-        void ChooseSize(string size);
+        INFO,
+        WARNING,
+        ERROR,
+        FATAL
     }
 }

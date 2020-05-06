@@ -9,11 +9,6 @@ namespace Starbucks
             IScreen gui = new UserInterface();
             Menu menu = new Menu(gui);
             menu.Start();
-
-
-
-
-
         }
     }
 }
